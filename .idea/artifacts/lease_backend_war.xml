@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lease-backend:war">
+    <output-path>$PROJECT_DIR$/lease-backend/target</output-path>
+    <root id="archive" name="lease-backend-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="lease-backend:war exploded" />
+    </root>
+  </artifact>
+</component>

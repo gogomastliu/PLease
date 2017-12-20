@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/lease-backend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lease-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lease-manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lease-manager/lease-manager-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lease-manager/lease-manager-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lease-manager/lease-manager-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lease-manager/lease-manager-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lease-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lease-ws-im" charset="UTF-8" />
+  </component>
+</project>

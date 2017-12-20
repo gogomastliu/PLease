@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pandora.lease.ws.dao.GroupDAO">
+    <resultMap id="QueryGroupMap" type="com.pandora.lease.ws.model.GroupModel">
+        <id column="group_id" property="id" jdbcType="INTEGER"/>
+        <result column="group_name" property="groupName" jdbcType="VARCHAR"/>
+        <collection property="list" ofType="com.pandora.lease.ws.model.GroupUserModel">
+            <id column="groupuserid" property="id" jdbcType="INTEGER"/>
+            <id column="user_id" property="userId" jdbcType="INTEGER"/>
+            <result column="username" property="username" jdbcType="VARCHAR"/>
+            <result column="avatar" property="avatar" jdbcType="VARCHAR"/>
+            <result column="sign" property="sign" jdbcType="VARCHAR"/>
+            <result column="status" property="status" jdbcType="INTEGER"/>
+            <result column="group_id" property="groupId" jdbcType="INTEGER"/>
+        </collection>
+    </resultMap>
+    <select id="QueryGroupByUser" parameterType="Integer" resultMap="QueryGroupMap">
+    SELECT
+        g.id group_id,
+        g.group_name,
+        gu.id groupuserid,
+        gu.user_id,
+        gu.username,
+        gu.avatar,
+        gu.sign,
+        gu. STATUS,
+        gu.group_id
+    FROM
+        t_im_group g
+    LEFT JOIN t_im_groupuser gu ON g.id = gu.group_id
+    where gu.user_id!=#{userid}
+    </select>
+</mapper>

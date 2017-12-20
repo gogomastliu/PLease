@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lease-backend" />
+        <module name="lease-common" />
+        <module name="lease-manager-controller" />
+        <module name="lease-manager-dao" />
+        <module name="lease-manager-pojo" />
+        <module name="lease-manager-service" />
+        <module name="lease-web" />
+        <module name="lease-ws-im" />
+        <module name="lease-ws-websocket" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lease-backend" target="1.8" />
+      <module name="lease-common" target="1.5" />
+      <module name="lease-manager" target="1.8" />
+      <module name="lease-manager-controller" target="1.8" />
+      <module name="lease-manager-dao" target="1.8" />
+      <module name="lease-manager-pojo" target="1.8" />
+      <module name="lease-manager-service" target="1.8" />
+      <module name="lease-manager-web" target="1.5" />
+      <module name="lease-web" target="1.8" />
+      <module name="lease-websocket" target="1.5" />
+      <module name="lease-ws-im" target="1.8" />
+      <module name="lease-ws-service" target="1.5" />
+      <module name="lease-ws-web" target="1.5" />
+      <module name="lease-ws-websocket" target="1.8" />
+      <module name="leasews" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

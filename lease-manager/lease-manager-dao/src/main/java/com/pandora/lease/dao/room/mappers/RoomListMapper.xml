@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pandora.lease.dao.room.RoomDAO">
+
+
+    <select id="queryForList" resultMap="queryForListMap">
+        SELECT
+            r.id,
+            r.room_code,
+            r.room_title,
+            r.release_time,
+            r.rtype,
+            rc.id rr_id,
+            rc.chamber rr_name,
+            rc.pid rr_pid,
+            rc.room_size rr_room_size,
+            rc.toilet
+        FROM
+            t_room r
+        LEFT JOIN t_room_config rc ON r.id = rc.room_id
+    </select>
+
+    <resultMap id="queryForListMap" type="com.pandora.lease.model.manager.room.RoomModel">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="room_code" property="room_code" jdbcType="VARCHAR"/>
+        <result column="room_title" property="room_title" jdbcType="VARCHAR"/>
+        <result column="release_time" property="release_time" jdbcType="TIMESTAMP"/>
+        <result column="rtype" property="rtype" jdbcType="INTEGER"/>
+        <collection property="childrenList"  ofType="com.pandora.lease.model.manager.room.RoomConfigModel">
+            <id column="rr_id" property="id" jdbcType="INTEGER" />
+            <result column="rr_name" property="room_config_code" jdbcType="VARCHAR" />
+            <result column="rr_pid" property="pid" jdbcType="INTEGER" />
+            <result column="rr_room_size" property="room_size" jdbcType="DECIMAL" />
+            <result column="toilet" property="toilet" jdbcType="TINYINT" />
+        </collection>
+    </resultMap>
+</mapper>

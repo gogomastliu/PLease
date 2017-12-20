@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/lease-backend" />
+    <file type="web" url="file://$PROJECT_DIR$/lease-manager/lease-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/lease-web" />
+    <file type="web" url="file://$PROJECT_DIR$/lease-websocket/lease-ws-web" />
+    <file type="web" url="file://$PROJECT_DIR$/lease-ws" />
+    <file type="web" url="file://$PROJECT_DIR$/lease-ws-im" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/lease-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/lease-common/pom.xml" />
+        <option value="$PROJECT_DIR$/lease-websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/lease-ws-websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/lease-web/pom.xml" />
+        <option value="$PROJECT_DIR$/lease-ws-im/pom.xml" />
+        <option value="$PROJECT_DIR$/lease-backend/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/lease-manager/lease-manager-web/pom.xml" />
+        <option value="$PROJECT_DIR$/lease-websocket/lease-ws-service/pom.xml" />
+        <option value="$PROJECT_DIR$/lease-websocket/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

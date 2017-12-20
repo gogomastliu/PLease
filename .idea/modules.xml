@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lease-backend/lease-backend.iml" filepath="$PROJECT_DIR$/lease-backend/lease-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lease-common/lease-common.iml" filepath="$PROJECT_DIR$/lease-common/lease-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lease-manager/lease-manager.iml" filepath="$PROJECT_DIR$/lease-manager/lease-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lease-manager/lease-manager-controller/lease-manager-controller.iml" filepath="$PROJECT_DIR$/lease-manager/lease-manager-controller/lease-manager-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lease-manager/lease-manager-dao/lease-manager-dao.iml" filepath="$PROJECT_DIR$/lease-manager/lease-manager-dao/lease-manager-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lease-manager/lease-manager-pojo/lease-manager-pojo.iml" filepath="$PROJECT_DIR$/lease-manager/lease-manager-pojo/lease-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lease-manager/lease-manager-service/lease-manager-service.iml" filepath="$PROJECT_DIR$/lease-manager/lease-manager-service/lease-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lease-web/lease-web.iml" filepath="$PROJECT_DIR$/lease-web/lease-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lease-ws-im/lease-ws-im.iml" filepath="$PROJECT_DIR$/lease-ws-im/lease-ws-im.iml" />
+    </modules>
+  </component>
+</project>

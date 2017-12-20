@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pandora.lease.ws.dao.MsgDAO">
+    <!--<resultMap id="QueryOffLineMsgMap" type="com.pandora.lease.ws.model.MsgModel">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="time_stamp" property="time_stamp" jdbcType="INTEGER"/>
+        <result column="msg_type" property="msgType" jdbcType="INTEGER"/>
+        <result column="os_type" property="os_type" jdbcType="INTEGER"/>
+        <result column="msgcontent" property="msgContent" jdbcType="VARCHAR" />
+        <result column="creatdate" property="creatDate" jdbcType="TIMESTAMP"/>
+        <result column="state" property="state" jdbcType="INTEGER"/>
+        <collection property="msgDetails"  ofType="com.pandora.lease.ws.model.MsgDetailModel">
+            <id column="detail_id" property="id" jdbcType="INTEGER" />
+            <result column="sendman_id" property="sendMan_Id" jdbcType="INTEGER" />
+            <result column="receiveman_id" property="receiveMan_Id" jdbcType="INTEGER" />
+            <result column="receive_date" property="receive_date" jdbcType="TIMESTAMP" />
+            <result column="detail_state" property="state" jdbcType="INTEGER" />
+        </collection>
+    </resultMap>
+    <select id="QueryOffLineMsgByUser" parameterType="Map" resultMap="QueryOffLineMsgMap">
+        SELECT
+        msg.id,
+        msg.time_stamp,
+        msg.msg_type,
+        msg.os_type,
+        msg.msgcontent,
+        msg.creatdate,
+        msg.state,
+        msgd.id AS detail_id,
+        msgd.sendman_id,
+        msgd.receiveman_id,
+        msgd.receive_date,
+        msgd.state AS detail_state
+        FROM
+        t_socket_msg msg
+        LEFT JOIN t_socket_msg_detail msgd ON msg.id = msgd.msg_id
+        where 1=1
+        <if test="msg_type!=null and msg_type!=''">
+            and msg.msg_type=#{msg_type}
+        </if>
+        <if test="dstate!=null and dstate!=''">
+            and msgd.state=#{dstate}
+        </if>
+        &lt;!&ndash;  适合in的写法
+        <if test="employeeIdsArray!=null and employeeIdsArray.length!=0">
+            AND e.EMPLOYEE_ID in
+            <foreach collection="employeeIdsArray" item="employeeId"
+                     index="index" open="(" close=")" separator=",">
+                #{employeeId}
+            </foreach>
+        </if>&ndash;&gt;
+    </select>-->
+
+</mapper>
